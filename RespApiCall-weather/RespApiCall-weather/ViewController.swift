@@ -17,6 +17,8 @@ class ViewController: UIViewController, WeatherServiceDelegate {
     @IBOutlet weak var DescriptionLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     
+    @IBOutlet weak var IconImg: UIImageView!
+    
     @IBAction func setCityButton(sender: UIButton) {
 //        print("ciao")
         openCityAlert()
@@ -60,9 +62,12 @@ class ViewController: UIViewController, WeatherServiceDelegate {
     func setWeather(weather: Weather) {
 //        print("*** Set Weather")
 //        print("City: \(weather.cityName) temp:\(weather.temp)")
-        cityLabel.text = weather.cityName
-        tempLabel.text = "\(weather.temp)" // l'ho messo cosi perchè la temp è un integer. Cosi diventa string
+//        cityLabel.text = weather.cityName
+        tempLabel.text = "\(weather.tempC)" // l'ho messo cosi perchè la temp è un integer. Cosi diventa string
         DescriptionLabel.text = weather.description
+        IconImg.image = UIImage(named: weather.icon)
+        print(weather.icon)
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()

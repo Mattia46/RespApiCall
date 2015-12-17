@@ -17,64 +17,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8t-3G-AYV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8t-3G-AYV">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="58" y="52" width="275" height="34"/>
+                                    <rect key="frame" x="199" y="40" width="195" height="55"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHa-LN-D9A">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMg-hx-thM">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="58" y="115" width="296" height="31"/>
+                                    <rect key="frame" x="48" y="54" width="156" height="33"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHa-LN-D9A">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="13" y="215" width="227" height="31"/>
+                                </variation>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="01d.png" translatesAutoresizingMaskIntoConstraints="NO" id="p6V-4g-FQY">
+                                <rect key="frame" x="0.0" y="-547" width="555" height="547"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="90" y="254" width="221" height="208"/>
+                                </variation>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrs-n2-hXC">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Set City"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="157" y="241" width="54" height="30"/>
+                                    <rect key="frame" x="173" y="470" width="54" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="setCityButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ek2-lX-IGs"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMg-hx-thM">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="58" y="172" width="304" height="33"/>
-                                </variation>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="C8t-3G-AYV"/>
-                                <exclude reference="yHa-LN-D9A"/>
-                                <exclude reference="qrs-n2-hXC"/>
                                 <exclude reference="CMg-hx-thM"/>
+                                <exclude reference="yHa-LN-D9A"/>
+                                <exclude reference="p6V-4g-FQY"/>
+                                <exclude reference="qrs-n2-hXC"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="C8t-3G-AYV"/>
-                                <include reference="yHa-LN-D9A"/>
-                                <include reference="qrs-n2-hXC"/>
                                 <include reference="CMg-hx-thM"/>
+                                <include reference="yHa-LN-D9A"/>
+                                <include reference="p6V-4g-FQY"/>
+                                <include reference="qrs-n2-hXC"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="DescriptionLabel" destination="yHa-LN-D9A" id="WNH-Eq-UAr"/>
+                        <outlet property="IconImg" destination="p6V-4g-FQY" id="mcv-OE-Cd4"/>
                         <outlet property="cityLabel" destination="CMg-hx-thM" id="Sui-FO-k8g"/>
                         <outlet property="tempLabel" destination="C8t-3G-AYV" id="pYA-M5-Z26"/>
                     </connections>
@@ -84,4 +93,7 @@
             <point key="canvasLocation" x="564" y="549"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="01d.png" width="555" height="547"/>
+    </resources>
 </document>
