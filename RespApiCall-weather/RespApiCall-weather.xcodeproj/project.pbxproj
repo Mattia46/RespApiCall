@@ -14,6 +14,7 @@
 		498443231C23011A0090B9EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498443211C23011A0090B9EE /* LaunchScreen.storyboard */; };
 		4984432E1C23011A0090B9EE /* RespApiCall_weatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984432D1C23011A0090B9EE /* RespApiCall_weatherTests.swift */; };
 		498443391C23011A0090B9EE /* RespApiCall_weatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498443381C23011A0090B9EE /* RespApiCall_weatherUITests.swift */; };
+		498443471C2311E30090B9EE /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498443461C2311E30090B9EE /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		498443341C23011A0090B9EE /* RespApiCall-weatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RespApiCall-weatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		498443381C23011A0090B9EE /* RespApiCall_weatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespApiCall_weatherUITests.swift; sourceTree = "<group>"; };
 		4984433A1C23011A0090B9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498443461C2311E30090B9EE /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				498443181C23011A0090B9EE /* AppDelegate.swift */,
 				4984431A1C23011A0090B9EE /* ViewController.swift */,
+				498443461C2311E30090B9EE /* WeatherService.swift */,
 				4984431C1C23011A0090B9EE /* Main.storyboard */,
 				4984431F1C23011A0090B9EE /* Assets.xcassets */,
 				498443211C23011A0090B9EE /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4984431B1C23011A0090B9EE /* ViewController.swift in Sources */,
+				498443471C2311E30090B9EE /* WeatherService.swift in Sources */,
 				498443191C23011A0090B9EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +489,7 @@
 				4984433F1C23011A0090B9EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		498443401C23011A0090B9EE /* Build configuration list for PBXNativeTarget "RespApiCall-weatherTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +498,7 @@
 				498443421C23011A0090B9EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		498443431C23011A0090B9EE /* Build configuration list for PBXNativeTarget "RespApiCall-weatherUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +507,7 @@
 				498443451C23011A0090B9EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

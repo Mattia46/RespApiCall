@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WeatherServiceDelegate {
+    
+    
+    let weatherService = WeatherService() // var che contiene l'instance della classe
 
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var DescriptionLabel: UILabel!
@@ -34,16 +37,34 @@ class ViewController: UIViewController {
         let ok = UIAlertAction(title: "OK",
             style: UIAlertActionStyle.Default) { (action: UIAlertAction) -> Void in
                 print("OK")
+                let textField = alert.textFields?[0]
+                print(textField?.text!)
+                self.cityLabel.text = textField?.text!
+                
+                let cityName = textField?.text
+                self.weatherService.getWeather(cityName!)  // chiamo la func nell'altra classe
+                
         }
         
         alert.addAction(ok)
         
+        alert.addTextFieldWithConfigurationHandler { (textField: UITextField) -> Void in
+            textField.placeholder = "City name"
+        }
+        
         self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    // Mark: weatherServiceDelegate
+    
+    func setWeather() {
+        print("View controller Set Weather")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.weatherService.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
