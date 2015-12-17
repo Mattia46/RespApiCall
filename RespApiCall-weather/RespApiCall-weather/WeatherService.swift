@@ -10,7 +10,7 @@ import Foundation
 
 protocol WeatherServiceDelegate {
     
-    func setWeather()
+    func setWeather(weather: Weather)
     
 }
 
@@ -22,8 +22,10 @@ class WeatherService {
     func getWeather(city: String) {
         print("Weather Service city: \(city)")
         
+        let weather = Weather(cityName: city, temp: 237.12, description: "A nice day")
+        
         if delegate != nil {
-           delegate?.setWeather()
+           delegate?.setWeather(weather)
         }
         
     }

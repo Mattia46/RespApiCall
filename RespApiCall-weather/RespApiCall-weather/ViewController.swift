@@ -47,6 +47,7 @@ class ViewController: UIViewController, WeatherServiceDelegate {
         }
         
         alert.addAction(ok)
+    
         
         alert.addTextFieldWithConfigurationHandler { (textField: UITextField) -> Void in
             textField.placeholder = "City name"
@@ -57,8 +58,9 @@ class ViewController: UIViewController, WeatherServiceDelegate {
     
     // Mark: weatherServiceDelegate
     
-    func setWeather() {
-        print("View controller Set Weather")
+    func setWeather(weather: Weather) {
+        print("*** Set Weather")
+        print("City: \(weather.cityName) temp:\(weather.temp)")
     }
     
     override func viewDidLoad() {
