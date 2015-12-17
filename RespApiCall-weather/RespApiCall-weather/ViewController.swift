@@ -38,7 +38,6 @@ class ViewController: UIViewController, WeatherServiceDelegate {
             style: UIAlertActionStyle.Default) { (action: UIAlertAction) -> Void in
                 print("OK")
                 let textField = alert.textFields?[0]
-                print(textField?.text!)
                 self.cityLabel.text = textField?.text!
                 
                 let cityName = textField?.text
@@ -59,10 +58,12 @@ class ViewController: UIViewController, WeatherServiceDelegate {
     // Mark: weatherServiceDelegate
     
     func setWeather(weather: Weather) {
-        print("*** Set Weather")
-        print("City: \(weather.cityName) temp:\(weather.temp)")
+//        print("*** Set Weather")
+//        print("City: \(weather.cityName) temp:\(weather.temp)")
+        cityLabel.text = weather.cityName
+        tempLabel.text = "\(weather.temp)" // l'ho messo cosi perchè la temp è un integer. Cosi diventa string
+        DescriptionLabel.text = weather.description
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
