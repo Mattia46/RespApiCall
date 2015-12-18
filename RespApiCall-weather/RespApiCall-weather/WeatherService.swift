@@ -39,7 +39,7 @@ class WeatherService {
 
             let lon = json ["coord"]["lon"].double
             let lat = json["coord"]["lat"].double
-            let temp = json["main"]["temp"].double
+            let temp = json["main"]["temp"].int
             let name = json["name"].string
             let description = json["weather"][0]["description"].string
             let icon = json["weather"][0]["icon"].string
@@ -63,7 +63,7 @@ class WeatherService {
         
 //        print("Weather Service city: \(city)")
 //        
-//        let weather = Weather(cityName: city, temp: 237.12, description: "A nice day")
+//        let weather = Weather(cityName: city, temp: 237, description: "A nice day")
 //        
 //        if delegate != nil {
 //           delegate?.setWeather(weather)

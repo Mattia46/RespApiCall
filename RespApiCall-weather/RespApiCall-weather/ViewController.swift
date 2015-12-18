@@ -20,7 +20,6 @@ class ViewController: UIViewController, WeatherServiceDelegate {
     @IBOutlet weak var IconImg: UIImageView!
     
     @IBAction func setCityButton(sender: UIButton) {
-//        print("ciao")
         openCityAlert()
     }
     
@@ -30,7 +29,7 @@ class ViewController: UIViewController, WeatherServiceDelegate {
             message: "Enter city name",
             preferredStyle: UIAlertControllerStyle.Alert)
         
-        let cancel = UIAlertAction(title: "Calcel",
+        let cancel = UIAlertAction(title: "Cancel",
             style: UIAlertActionStyle.Cancel,
             handler: nil)
         

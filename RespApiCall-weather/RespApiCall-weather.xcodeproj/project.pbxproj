@@ -15,6 +15,8 @@
 		4984432E1C23011A0090B9EE /* RespApiCall_weatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984432D1C23011A0090B9EE /* RespApiCall_weatherTests.swift */; };
 		498443391C23011A0090B9EE /* RespApiCall_weatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498443381C23011A0090B9EE /* RespApiCall_weatherUITests.swift */; };
 		498443471C2311E30090B9EE /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498443461C2311E30090B9EE /* WeatherService.swift */; };
+		498443491C2318070090B9EE /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498443481C2318070090B9EE /* Weather.swift */; };
+		4984434B1C2323AD0090B9EE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984434A1C2323AD0090B9EE /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		498443381C23011A0090B9EE /* RespApiCall_weatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespApiCall_weatherUITests.swift; sourceTree = "<group>"; };
 		4984433A1C23011A0090B9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		498443461C2311E30090B9EE /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		498443481C2318070090B9EE /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		4984434A1C2323AD0090B9EE /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				498443181C23011A0090B9EE /* AppDelegate.swift */,
 				4984431A1C23011A0090B9EE /* ViewController.swift */,
 				498443461C2311E30090B9EE /* WeatherService.swift */,
+				498443481C2318070090B9EE /* Weather.swift */,
+				4984434A1C2323AD0090B9EE /* SwiftyJSON.swift */,
 				4984431C1C23011A0090B9EE /* Main.storyboard */,
 				4984431F1C23011A0090B9EE /* Assets.xcassets */,
 				498443211C23011A0090B9EE /* LaunchScreen.storyboard */,
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498443491C2318070090B9EE /* Weather.swift in Sources */,
 				4984431B1C23011A0090B9EE /* ViewController.swift in Sources */,
 				498443471C2311E30090B9EE /* WeatherService.swift in Sources */,
+				4984434B1C2323AD0090B9EE /* SwiftyJSON.swift in Sources */,
 				498443191C23011A0090B9EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +416,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mattia.RespApiCall-weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -419,6 +428,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mattia.RespApiCall-weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
